@@ -13,7 +13,9 @@ h1 {
 }
 
 .card {
-    width: 300px;
+    /* using view width or vw is better when adjusting screen 
+    50 is a percentage of the whole screen*/
+    width: 50vw;
     border: 3px solid black;
     background-color: lightblue;
     padding: 30px;
@@ -66,4 +68,24 @@ h3.comments-title::first-letter {
 
 div + div {
     color: green;
+}
+
+div {
+    font-size: 20px;
+}
+
+/* 2em = 2* the size 
+its related to the settings I made
+*/
+div p {
+    font-size: 2em;
+}
+
+/* rem is relatieve to the default seeting, so default is 16px */
+h1 {
+    font-size: 3rem;
+}
+
+article {
+    min-height: 100vh;
 }
